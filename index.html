@@ -10,18 +10,197 @@
     <!-- Шапка страницы -->
     <header class="header">
       <nav class="nav">
-        <ul class="menu">
-          <li class="menu__item">Home</li>
-          <li class="menu__item">About me</li>
-          <li class="menu__item">Skills</li>
-          <li class="menu__item">Portfolio</li>
-          <li class="menu__item">Contacts</li>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="" class="menu__link current">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">About me</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Contacts</a>
+          </li>
         </ul>
       </nav>
+      <button type="button" class="menu-open-btn">
+        <svg width="33" height="19" aria-label="Переключатель мобильного меню">
+          <use
+            class="menu-open-btn__icon"
+            href="./img/icons.svg#icon-open-btn"
+          ></use>
+        </svg>
+      </button>
     </header>
+
+    <!-- Мобильное меню -->
+    <div class="mob-menu">
+      <div class="container">
+        <div class="mob-menu__wrap">
+          <button type="button" class="menu-close-btn pointer">
+            <svg
+              width="22"
+              height="22"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-close-btn__icon"
+                href="./img/icons.svg#icon-close-btn"
+              ></use>
+            </svg>
+          </button>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link current">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">About me</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Skills</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Portfolio</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link">Contacts</a>
+            </li>
+          </ul>
+          <p class="lang">ua | eng</p>
+        </div>
+      </div>
+    </div>
+
     <main>
-      <hero class="hero"> </hero>
+      <!-- Hero -->
+      <hero class="hero">
+        <a href="">
+          <img src="./img/logo.jpg" alt="Логотип" width="123" />
+        </a>
+        <h1>
+          UX | UI designer ,<br />
+          24 years old, Kyiv
+        </h1>
+        <p class="lang">ua | eng</p>
+      </hero>
+
+      <!-- About -->
+      <section class="about">
+        <p class="about__text">
+          Hi, I'm Denis – UX/UI designer from Kyiv. I'm interested in design and
+          everything connected with it. <br />
+          I'm studying at courses "Web and mobile design interfaces" in
+          IT-Academy. <br />Ready to implement excellent projects with wonderful
+          people
+        </p>
+      </section>
+
+      <!-- Scills -->
+      <section class="scills">
+        <h1 class="scills__title">I work in such programs as</h1>
+        <ul class="scills-list">
+          <li class="scills-list__item">
+            <a href="scills-list__link">
+              <img src="./img/scills-img-1.jpg" alt="" width="89" />
+              <!-- <svg class="scills-list__icon" width="89" height="89">
+                <use href="./img/icons.svg#icon-scills-1"></use>
+              </svg> -->
+            </a>
+            <p>Adobe Photoshop</p>
+          </li>
+          <li class="scills-list__item">
+            <a href="scills-list__link">
+              <img src="./img/scills-img-2.jpg" alt="" width="89" />
+              <!-- <svg class="scills-list__icon" width="89" height="89">
+                <use href="./img/icons.svg#icon-scills-2"></use>
+              </svg> -->
+            </a>
+            <p>Adobe Illustrator</p>
+          </li>
+          <li class="scills-list__item">
+            <a href="scills-list__link">
+              <img src="./img/scills-img-3.jpg" alt="" width="89" />
+              <!-- <svg class="scills-list__icon" width="89" height="89">
+                <use href="./img/icons.svg#icon-scills-3"></use>
+              </svg> -->
+            </a>
+            <p>Adobe After Effects</p>
+          </li>
+          <li class="scills-list__item">
+            <a href="scills-list__link">
+              <img src="./img/scills-img-4.jpg" alt="" width="89" />
+              <!-- <svg class="scills-list__icon" width="89" height="89">
+                <use href="./img/icons.svg#icon-scills-4"></use>
+              </svg> -->
+            </a>
+            <p>Figma</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Portfolio -->
+      <section class="portfolio">
+        <h1>Our works</h1>
+        <ul>
+          <li>
+            <a href=""><img src="./img/portfolio-img-1.jpg" alt="" /></a>
+          </li>
+          <p>Online fashion store - Homepage</p>
+          <li>
+            <a href=""><img src="./img/portfolio-img-2.jpg"" alt="" /></a>
+            <p>Reebok Store - Concept</p>
+          </li>
+          <li>
+            <a href=""><img src="./img/portfolio-img-3.jpg"" alt="" /></a>
+            <p>Braun Landing Page - Concept</p>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer class="footer"></footer>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h1>Contacts</h1>
+      <p>
+        Want to know more or just chat? <br />
+        You are welcome!
+      </p>
+      <button type="submit">Send message</button>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="socials__link">
+            <svg class="sociasl__icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-socials-1"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="socials__link">
+            <svg class="sociasl__icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-socials-2"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="socials__link">
+            <svg class="sociasl__icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-socials-3"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="socials__link">
+            <svg class="sociasl__icon" width="40" height="40">
+              <use href="./img/icons.svg#icon-socials-4"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
