@@ -1,0 +1,27 @@
+.header {
+  // background-color: yellow;
+}
+
+.nav {
+  border-bottom: 10px solid var(--secondary-text-color);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__item {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  &:not(:last-child) {
+    margin-right: 155px;
+  }
+}
+
+.menu__link {
+  display: block;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: var(--secondary-text-color);
+}

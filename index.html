@@ -5,41 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!-- Шапка страницы -->
     <header class="header">
-      <nav class="nav">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="" class="menu__link current">Home</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">About me</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Skills</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Portfolio</a>
-          </li>
-          <li class="menu__item">
-            <a href="" class="menu__link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <button type="button" class="menu-open-btn">
+      <div class="container header__container">
+        <nav class="nav">
+          <ul class="menu list">
+            <li class="menu__item">
+              <a href="" class="menu__link current">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">About me</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Skills</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Portfolio</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- <button type="button" class="menu-open-btn">
         <svg width="33" height="19" aria-label="Переключатель мобильного меню">
           <use
             class="menu-open-btn__icon"
             href="./img/icons.svg#icon-open-btn"
           ></use>
         </svg>
-      </button>
+      </button> -->
     </header>
 
     <!-- Мобильное меню -->
-    <div class="mob-menu">
+    <!-- <div class="mob-menu is-hidden">
       <div class="container">
         <div class="mob-menu__wrap">
           <button type="button" class="menu-close-btn pointer">
@@ -74,133 +95,192 @@
           <p class="lang">ua | eng</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <main>
       <!-- Hero -->
-      <hero class="hero">
-        <a href="">
-          <img src="./img/logo.jpg" alt="Логотип" width="123" />
-        </a>
-        <h1>
-          UX | UI designer ,<br />
-          24 years old, Kyiv
-        </h1>
-        <p class="lang">ua | eng</p>
-      </hero>
+      <section class="hero">
+        <div class="container hero__container">
+          <a href="" class="logo hero__logo">
+            <img src="./img/logo.jpg" alt="Логотип" width="123" />
+          </a>
+          <div class="hero-wrap">
+            <h1 class="hero-wrap__title">
+              UX | UI designer ,<br />
+              24 years old, Kyiv
+            </h1>
+            <p class="hero-wrap__lang">ua | eng</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <img src="./img/hero-bg.jpg" alt="" width="940" />
+        </div>
+      </section>
 
       <!-- About -->
       <section class="about">
-        <p class="about__text">
-          Hi, I'm Denis – UX/UI designer from Kyiv. I'm interested in design and
-          everything connected with it. <br />
-          I'm studying at courses "Web and mobile design interfaces" in
-          IT-Academy. <br />Ready to implement excellent projects with wonderful
-          people
-        </p>
+        <div class="container about__container">
+          <h1 class="about__title">About me</h1>
+          <p class="about__text">
+            Hi, I'm Denis – UX/UI designer from Kyiv. I'm interested in design
+            and everything connected with it. <br />
+            I'm studying at courses "Web and mobile design interfaces" in
+            IT-Academy. <br />Ready to implement excellent projects with
+            wonderful people
+          </p>
+        </div>
       </section>
 
       <!-- Scills -->
       <section class="scills">
-        <h1 class="scills__title">I work in such programs as</h1>
-        <ul class="scills-list">
-          <li class="scills-list__item">
-            <a href="scills-list__link">
-              <img src="./img/scills-img-1.jpg" alt="" width="89" />
-              <!-- <svg class="scills-list__icon" width="89" height="89">
-                <use href="./img/icons.svg#icon-scills-1"></use>
-              </svg> -->
-            </a>
-            <p>Adobe Photoshop</p>
-          </li>
-          <li class="scills-list__item">
-            <a href="scills-list__link">
-              <img src="./img/scills-img-2.jpg" alt="" width="89" />
-              <!-- <svg class="scills-list__icon" width="89" height="89">
-                <use href="./img/icons.svg#icon-scills-2"></use>
-              </svg> -->
-            </a>
-            <p>Adobe Illustrator</p>
-          </li>
-          <li class="scills-list__item">
-            <a href="scills-list__link">
-              <img src="./img/scills-img-3.jpg" alt="" width="89" />
-              <!-- <svg class="scills-list__icon" width="89" height="89">
-                <use href="./img/icons.svg#icon-scills-3"></use>
-              </svg> -->
-            </a>
-            <p>Adobe After Effects</p>
-          </li>
-          <li class="scills-list__item">
-            <a href="scills-list__link">
-              <img src="./img/scills-img-4.jpg" alt="" width="89" />
-              <!-- <svg class="scills-list__icon" width="89" height="89">
-                <use href="./img/icons.svg#icon-scills-4"></use>
-              </svg> -->
-            </a>
-            <p>Figma</p>
-          </li>
-        </ul>
+        <div class="container scills__container">
+          <h1 class="scills__title">Scills</h1>
+          <p class="scills__desc">I work in such programs as</p>
+          <ul class="scills-list list">
+            <li class="scills-list__item">
+              <div class="scills-list__thumb-1">
+                <svg class="scills-list__icon" width="89" height="89">
+                  <use href="./img/icons.svg#icon-scills-1"></use>
+                </svg>
+              </div>
+              <p class="scills-list__text">
+                Adobe <br />
+                Photoshop
+              </p>
+              <div class="scills-list__thumb-2">
+                <svg class="scills-list__star" width="166" height="26">
+                  <use href="./img/icons.svg#icon-star-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="scills-list__item">
+              <div class="scills-list__thumb-1">
+                <svg class="scills-list__icon" width="89" height="89">
+                  <use href="./img/icons.svg#icon-scills-2"></use>
+                </svg>
+              </div>
+              <p class="scills-list__text">
+                Adobe <br />
+                Illustrator
+              </p>
+              <div class="scills-list__thumb-2">
+                <svg class="scills-list__star" width="166" height="26">
+                  <use href="./img/icons.svg#icon-star-2"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="scills-list__item">
+              <div class="scills-list__thumb-1">
+                <svg class="scills-list__icon" width="89" height="89">
+                  <use href="./img/icons.svg#icon-scills-3"></use>
+                </svg>
+                <p class="scills-list__text">
+                  Adobe <br />
+                  After Effects
+                </p>
+              </div>
+              <div class="scills-list__thumb-2">
+                <svg class="scills-list__star" width="166" height="26">
+                  <use href="./img/icons.svg#icon-star-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="scills-list__item">
+              <div class="sciils-list__thumb-1">
+                <svg class="scills-list__icon" width="89" height="89">
+                  <use href="./img/icons.svg#icon-scills-4"></use>
+                </svg>
+                <p class="scills-list__text">
+                  Figma <br />
+                  Figma
+                </p>
+              </div>
+              <div class="scills-list__thumb-2">
+                <svg class="scills-list__star" width="166" height="26">
+                  <use href="./img/icons.svg#icon-star-1"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Portfolio -->
       <section class="portfolio">
-        <h1>Our works</h1>
-        <ul>
-          <li>
-            <a href=""><img src="./img/portfolio-img-1.jpg" alt="" /></a>
-          </li>
-          <p>Online fashion store - Homepage</p>
-          <li>
-            <a href=""><img src="./img/portfolio-img-2.jpg"" alt="" /></a>
-            <p>Reebok Store - Concept</p>
-          </li>
-          <li>
-            <a href=""><img src="./img/portfolio-img-3.jpg"" alt="" /></a>
-            <p>Braun Landing Page - Concept</p>
-          </li>
-        </ul>
+        <div class="container portfolio__container">
+          <h1 class="portfolio__title">Portfolio</h1>
+          <ul class="portfolio-list list">
+            <li class="portfolio-list__item">
+              <img
+                src="./img/portfolio-img-1.jpg"
+                alt=""
+                class="portfolio-list__img"
+              />
+            </li>
+            <p class="portfolio-list__text">Online fashion store - Homepage</p>
+            <li class="portfolio-list__item">
+              <img
+                src="./img/portfolio-img-2.jpg"
+                alt=""
+                class="portfolio-list__img"
+              />
+              <p class="portfolio-list__text">Reebok Store - Concept</p>
+            </li>
+            <li class="portfolio-list__item">
+              <img
+                src="./img/portfolio-img-3.jpg"
+                alt=""
+                class="portfolio-list__img"
+              />
+              <p class="portfolio-list__text">Braun Landing Page - Concept</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-      <h1>Contacts</h1>
-      <p>
-        Want to know more or just chat? <br />
-        You are welcome!
-      </p>
-      <button type="submit">Send message</button>
-      <ul class="socials">
-        <li class="socials__item">
-          <a href="socials__link">
-            <svg class="sociasl__icon" width="40" height="40">
-              <use href="./img/icons.svg#icon-socials-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="socials__link">
-            <svg class="sociasl__icon" width="40" height="40">
-              <use href="./img/icons.svg#icon-socials-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="socials__link">
-            <svg class="sociasl__icon" width="40" height="40">
-              <use href="./img/icons.svg#icon-socials-3"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a href="socials__link">
-            <svg class="sociasl__icon" width="40" height="40">
-              <use href="./img/icons.svg#icon-socials-4"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      <div class="container footer__container">
+        <h1 class="footer__title">Contacts</h1>
+        <p class="footer__text">
+          Want to know more or just chat? <br />
+          You are welcome!
+        </p>
+        <button type="submit" class="footer__btn btn">Send message</button>
+        <ul class="socials list">
+          <li class="socials__item">
+            <a href="" aria-label="Linkedin link" class="socials__link">
+              <svg class="sociasl__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-socials-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" aria-label="Instagram link" class="socials__link">
+              <svg class="sociasl__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-socials-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" aria-label="Behance link" class="socials__link">
+              <svg class="sociasl__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-socials-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="" aria-label="Surface link" class="socials__link">
+              <svg class="sociasl__icon" width="40" height="40">
+                <use href="./img/icons.svg#icon-socials-4"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

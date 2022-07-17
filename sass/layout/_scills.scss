@@ -1,0 +1,39 @@
+.scills__container {
+  padding-top: 91px;
+  padding-bottom: 110px;
+}
+
+.scills__title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.scills__desc {
+  text-align: center;
+  margin-bottom: 73px;
+}
+
+.scills-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.scills-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scills-list__icon {
+  margin-bottom: 24px;
+}
+
+.scills-list__text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.scills-list__star {
+  align-items: center;
+}

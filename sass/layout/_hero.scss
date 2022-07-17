@@ -1,0 +1,29 @@
+// .hero {
+//   display: flex;
+// }
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrap__title {
+  margin-left: 155px;
+
+  font-size: 18px;
+  line-height: calc(22 / 18);
+}
+
+.hero-wrap__lang {
+  margin-left: 355px;
+  transform: rotate(-90deg);
+}
+
+.hero-img {
+  display: block;
+}
